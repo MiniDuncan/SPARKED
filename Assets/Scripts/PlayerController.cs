@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public GameObject jumpParticle, landingParticle;
     private bool lastGrounded;
 
+    private bool doubleJumpAvailable;
+
     public float bounceForce;
 
     [HideInInspector]
@@ -40,6 +42,7 @@ public class PlayerController : MonoBehaviour
         cam = FindObjectOfType<CameraController>();
 
         lastGrounded = true;
+        doubleJumpAvailable = true;
 
         charCon.Move(new Vector3(0f, Physics.gravity.y * gravityScale * Time.deltaTime, 0f));
     }
@@ -82,6 +85,7 @@ public class PlayerController : MonoBehaviour
             if (charCon.isGrounded)
             {
                 jumpParticle.SetActive(false);
+                doubleJumpAvailable = true;
 
                 if (!lastGrounded)
                 {
@@ -95,6 +99,17 @@ public class PlayerController : MonoBehaviour
                     jumpParticle.SetActive(true);
 
                     AudioManager.instance.PlaySFXPitched(11);
+                }
+            }else if(doubleJumpAvailable)
+            {
+                if (Input.GetButtonDown("Jump"))
+                {
+                    moveAmount.y = jumpForce;
+
+                    jumpParticle.SetActive(true);
+
+                    AudioManager.instance.PlaySFXPitched(11);
+                    doubleJumpAvailable = false;
                 }
             }
 

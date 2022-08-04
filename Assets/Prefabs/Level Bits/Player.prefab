@@ -9790,14 +9790,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  jumpForce: 17
+  jumpForce: 14
   gravityScale: 5
   charCon: {fileID: 7930769500537808374}
   rotateSpeed: 25
   anim: {fileID: 7930769499015712585}
   jumpParticle: {fileID: 7930769498877082480}
   landingParticle: {fileID: 7930769500259876549}
-  bounceForce: 15
+  bounceForce: 11
+  stopMoving: 0
 --- !u!143 &7930769500537808374
 CharacterController:
   m_ObjectHideFlags: 0

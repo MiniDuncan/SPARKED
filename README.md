@@ -10,4 +10,4 @@ Jump - Space Bar (A on controller)
 Assets used:
 Models, Music and SFX were supplied by James Doyle
 
-Download - https://miniduncan.itch.io/sparked
+Download - https://miniduncan.itch.io/sparked/

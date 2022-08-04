@@ -52,7 +52,7 @@ public class UIController : MonoBehaviour
                 );
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
             PauseUnpause();
         }

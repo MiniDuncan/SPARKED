@@ -9793,7 +9793,7 @@ MonoBehaviour:
   jumpForce: 14
   gravityScale: 5
   charCon: {fileID: 7930769500537808374}
-  rotateSpeed: 25
+  rotateSpeed: 8
   anim: {fileID: 7930769499015712585}
   jumpParticle: {fileID: 7930769498877082480}
   landingParticle: {fileID: 7930769500259876549}

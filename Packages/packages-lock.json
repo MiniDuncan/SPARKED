@@ -1,15 +1,5 @@
 {
   "dependencies": {
-    "com.playeveryware.eos": {
-      "version": "https://github.com/PlayEveryWare/eos_plugin_for_unity_upm.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.editorcoroutines": "1.0.0"
-      },
-      "hash": "bbdb3f16c14dbd2f6cdfa2dc943e31d044e8aab8"
-    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
@@ -81,7 +71,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.4",
+      "version": "1.2.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
